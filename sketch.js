@@ -44,10 +44,10 @@ function draw() {
   drawSprites();
 }
 
-function hasCollided(bullet,wall){
-   bulletRightEdge=bullet.x+bullet.width;
-   wallLeftEdge=wall.x;
-   if(bulletRightEdge>=wallLeftEdge){
+function hasCollided(object1,object2){
+  object1RightEdge=object1.x+object1.width;
+  object2LeftEdge=wall.x;
+   if(object1RightEdge>=object2LeftEdge){
       return true;
    }
    return false;
